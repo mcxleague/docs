@@ -1,30 +1,35 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "MCXLEAGUE Docs",
+  "name": "Vercl.co Docs",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/logos/logotype-dark.svg",
+    "light": "/logos/logotype.svg",
+    "href": "https://vercl.co"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/logos/favicon.png",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#9563FF",
+    "light": "#AE87FF",
+    "dark": "#0D001D",
+    "background": {
+      "dark": "#090014"
+    },
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#FF7F57",
+      "to": "#9563FF"
     }
   },
   "topbarLinks": [
     {
-      "name": "Login",
-      "url": "https://www.mcxleague.com/login"
+      "name": "Support",
+      "url": "mailto:support@vercl.co"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://www.mcxleague.com/dashboard"
+    "url": "https://app.vercl.co"
   },
+  "openapi": "https://api.vercl.co",
   "tabs": [
     {
       "name": "API Reference",
@@ -35,57 +40,78 @@
     {
       "name": "Documentation",
       "icon": "book-open-cover",
-      "url": "https://docs.mcxleague.com"
+      "url": "introduction"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://www.mcxleague.com/community"
+      "name": "API Reference",
+      "icon": "rectangle-terminal",
+      "url": "api-reference"
     },
     {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://www.mcxleague.com/blog"
+      "name": "Help Center",
+      "icon": "question",
+      "url": "https://vercl.co/help"
+    },
+    {
+      "name": "GitHub",
+      "icon": "github",
+      "url": "https://github.com/dubinc/dub"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Getting Started",
+      "pages": ["introduction", "self-hosting/guide"]
+    },
+    {
+      "group": "Integrations",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "integrations/zapier",
+        "integrations/pipedream",
+        "integrations/make",
+        "integrations/raycast"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "API Reference",
+      "pages": ["api-reference/introduction", "api-reference/rate-limits"]
+    },
+    {
+      "group": "Links",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "api-reference/endpoint/create-a-new-link",
+        "api-reference/endpoint/retrieve-a-link",
+        "api-reference/endpoint/edit-a-link",
+        "api-reference/endpoint/delete-a-link",
+        "api-reference/endpoint/retrieve-a-list-of-links",
+        "api-reference/endpoint/bulk-create-links"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Projects",
       "pages": [
-        "api-reference/introduction"
+        "api-reference/endpoint/retrieve-a-project",
+        "api-reference/endpoint/retrieve-a-list-of-projects"
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Tags",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "api-reference/endpoint/create-a-new-tag",
+        "api-reference/endpoint/retrieve-a-list-of-tags"
       ]
     }
   ],
+  "api": {
+    "maintainOrder": true
+  },
+  "feedback": {
+    "thumbsRating": true
+  },
   "footerSocials": {
-    "twitter": "https://twitter.com/mcxleague_",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "twitter": "https://twitter.com/dubdotco",
+    "github": "https://github.com/steven-tey/dub",
+    "linkedin": "https://www.linkedin.com/company/dubhq",
+    "website": "https://vercl.co"
   }
 }
